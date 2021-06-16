@@ -6,7 +6,7 @@ import Network.HTTP.Types (StdMethod (GET))
 import Network.Wai.Handler.Warp (run)
 import WebGear
 
-routes :: Handler '[] String
+routes :: Handler Router '[] String
 routes = [route| GET /hello/name:String/ |] $
   Kleisli $ \request -> do
     let name = pick @(PathVar "name" String) $ from request
