@@ -1,5 +1,5 @@
 # WebGear Example - Hello World
-A simple hello world project to demonstrate usage of webgear-server library.
+A simple hello world project to demonstrate usage of webgear library.
 
 # How to run
 Use stack to build and run the server:
